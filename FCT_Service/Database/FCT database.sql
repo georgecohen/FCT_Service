@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[Customers](
 	[ID] [bigint] IDENTITY(1,1) NOT NULL,
 	[Name] [nvarchar](256) NOT NULL,
 	[Email] [nvarchar](256) NOT NULL,
-	[Password] [nvarchar](50) NOT NULL,
+	[Password] [nvarchar](Max) NOT NULL,
 	[Token] [text] NULL,
  CONSTRAINT [PK_Customer] PRIMARY KEY CLUSTERED 
 (
@@ -58,9 +58,9 @@ CREATE TABLE [dbo].[Purchases](
 GO
 SET IDENTITY_INSERT [dbo].[Customers] ON 
 GO
-INSERT [dbo].[Customers] ([ID], [Name], [Email], [Password], [Token]) VALUES (1, N'John Smith', N'testclient@abc.com', N'~Fall2017', NULL)
+INSERT [dbo].[Customers] ([ID], [Name], [Email], [Password], [Token]) VALUES (1, N'John Smith', N'testclient@abc.com', N'10000.L1HZ6tiR3BgH2nGsisMOkg==.GNi64CWBXMF5EocK0/o6VAEyTG/9eSVAW2o+iHN+Yis=', NULL)
 GO
-INSERT [dbo].[Customers] ([ID], [Name], [Email], [Password], [Token]) VALUES (2, N'Tom Lee', N'test@abc.com', N'password', NULL)
+INSERT [dbo].[Customers] ([ID], [Name], [Email], [Password], [Token]) VALUES (2, N'Tom Lee', N'test@abc.com', N'10000.jHwcQJN856OJJ0/jR367Ag==.p/PR0P5IrVFvjDLVvj+yO+I3/GFQFCoZo30k/Bf4fmA=', NULL)
 GO
 SET IDENTITY_INSERT [dbo].[Customers] OFF
 GO
