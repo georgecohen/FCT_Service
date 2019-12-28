@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace FCT_Service.Helper
+namespace FCT_Service.Helpers
 {
     public sealed class PasswordHasher : IPasswordHasher
     {

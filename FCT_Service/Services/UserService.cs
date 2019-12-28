@@ -1,5 +1,4 @@
-﻿using FCT_Service.Helper;
-using FCT_Service.Helpers;
+﻿using FCT_Service.Helpers;
 using FCT_Service.Models;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
